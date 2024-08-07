@@ -1,8 +1,8 @@
 package ru.job4j.tracker;
 
 /**
-* JavaDoc.
-*/
+ * JavaDoc.
+ */
 public class Item {
   private int id;
   private String name;
@@ -21,5 +21,24 @@ public class Item {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public Item(String name) {
+    this.name = name;
+  }
+
+  public Item(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+
+  public Item() {
+
+  }
+
+  public static void main(String[] args) {
+    Item item = new Item();
+    Item item2 = new Item("Name");
+    Item item3 = new Item(1, "NameOne");
   }
 }
